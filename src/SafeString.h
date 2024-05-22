@@ -109,7 +109,7 @@
 
 #if defined(ESP_PLATFORM) || defined(ARDUINO_ARCH_ESP8266)
 #include <pgmspace.h>
-#elif defined(ARDUINO_ARDUINO_NANO33BLE) || defined(ARDUINO_ARCH_MBED_RP2040)|| defined(ARDUINO_ARCH_RP2040)|| defined(ARDUINO_ARCH_MBED)
+#elif defined(ARDUINO_ARDUINO_NANO33BLE) || defined(ARDUINO_ARCH_MBED_RP2040)|| defined(ARDUINO_ARCH_RP2040)|| defined(ARDUINO_ARCH_MBED) || defined(ARDUINO_ARCH_SAM)
 #include <api/deprecated-avr-comp/avr/pgmspace.h>
 #else
 #include <avr/pgmspace.h>
